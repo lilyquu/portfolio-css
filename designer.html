@@ -31,7 +31,16 @@
                 
 		<section class="main-page">
             <!-- <aside>Scroll Down<img src="./images/placeholder.png" id="scroll-down"/></aside> -->
-            <img src="./images/designer.PNG" class="my-pic"/>
+            <picture>
+				<source
+				   srcset="./images/artist.PNG 400w,
+				           ./images/artist.PNG 800w,
+						   ./images/artist.PNG 1200w"
+				   sizes="(min-width: 1280px) 1200px,
+						  (min-width: 768px) 400px,
+						  100vw">
+                <img src="./images/artist.PNG" class="my-pic" alt="my-pic"/>
+			</picture>
             <h1 id="hello" class="main-page-text"><b>Hello.</b></h1>
             <h2 id="i-am" class="main-page-text">I am <b>Lily Qu,</b></h2>
             <h2 id="know-me" class="main-page-text">know me </h2>

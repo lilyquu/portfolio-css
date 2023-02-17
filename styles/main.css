@@ -13,10 +13,6 @@
     box-sizing: border-box;
 }
 
-body{
-
-}
-
 body.coder{
     background-color: var(--white);
 }
@@ -66,15 +62,13 @@ body.artist{
     padding-bottom: 1.2vw;
     padding-left: 2.2vw;
     padding-right: 2.2vw;
+    transition-duration: 1s;
 }
 
 .select-nav{
-
+    text-decoration: line-through;
 }
 
-.unselect-nav{
-
-}
 
 .select-nav:hover{
     background-color: var(--gray);
@@ -113,9 +107,22 @@ body.artist{
     z-index:6;
 }
 
+@keyframes letter-rotate {
+    0%   {transform:rotate(-4deg)}
+    25%  {transform:rotate(1deg)}
+    50%  {transform:rotate(0deg)}
+    75%  {transform:rotate(1deg)}
+    100% {transform:rotate(-4deg)}
+}
+
 h1{
     font-size: min(9rem, 12vw);
     font-weight: bold;
+}
+
+h1:hover{
+    animation-name: letter-rotate;
+    animation-duration: 2s;
 }
 
 h2{
@@ -160,6 +167,7 @@ h1, h2{
 .main-page-text{
     margin-top: 13vw;
 }
+
 
 #footer{
     position: fixed;
